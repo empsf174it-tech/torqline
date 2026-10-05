@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Torqline</title>
+    <meta name="description" content="Get in touch with the Torqline team for inquiries, feedback, or support.">
+    <meta name="theme-color" content="#0A0A0B">
+    <script>document.documentElement.classList.add('js');</script>
+    <!-- Icon CDN -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Torqline home"><span class="logo-mark"><i class="ph-bold ph-steering-wheel"></i></span>Torqline</a>
+            <nav class="main-nav" id="mainNav" aria-label="Main">
+                <div class="nav-drawer-head">
+                    <span class="logo"><span class="logo-mark"><i class="ph-bold ph-steering-wheel"></i></span>Torqline</span>
+                    <button class="nav-close" id="navClose" aria-label="Close menu"><i class="ph ph-x"></i></button>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+                </ul>
+                <div class="nav-drawer-foot">
+                    <a href="compare.html" class="btn btn-accent btn-block">Compare vehicles <i class="ph-bold ph-arrow-right"></i></a>
+                </div>
+            </nav>
+            <div class="nav-actions">
+                <a href="compare.html" class="btn btn-primary btn-sm">Compare <i class="ph-bold ph-arrow-up-right"></i></a>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero--center">
+            <div class="container">
+                <span class="eyebrow anim-fade-up">Contact</span>
+                <h1 class="anim-fade-up anim-delay-1">Let's <span class="serif">talk.</span></h1>
+                <p class="lead anim-fade-up anim-delay-2">Have a question or feedback? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="container" style="padding-top:0;">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item reveal">
+                        <i class="ph ph-envelope-simple"></i>
+                        <div><strong>Email</strong><span>hello@torqline.example.com</span></div>
+                    </div>
+                    <div class="contact-item reveal">
+                        <i class="ph ph-clock"></i>
+                        <div><strong>Response time</strong><span>Within 1&ndash;2 business days</span></div>
+                    </div>
+                    <div class="contact-item reveal">
+                        <i class="ph ph-newspaper"></i>
+                        <div><strong>Press &amp; partnerships</strong><span>press@torqline.example.com</span></div>
+                    </div>
+                </div>
+
+                <div class="contact-wrap reveal">
+                    <!-- Formspree placeholder -->
+                    <form id="contactForm" action="https://formspree.io/f/placeholder" method="POST" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="c-name">Full name</label>
+                                <input type="text" id="c-name" name="name" class="form-control" placeholder="Jane Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="c-email">Email address</label>
+                                <input type="email" id="c-email" name="email" class="form-control" placeholder="jane@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="c-msg">Message</label>
+                            <textarea id="c-msg" name="message" class="form-control" rows="5" placeholder="How can we help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send message <i class="ph-bold ph-paper-plane-tilt"></i></button>
+                        <span class="form-msg" id="contactMsg" role="status"></span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-map reveal">
+                <iframe
+                    src="https://www.google.com/maps?q=Detroit,+MI&amp;z=12&amp;output=embed"
+                    title="Torqline office location map"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+                <div class="contact-map__card">
+                    <i class="ph-fill ph-map-pin"></i>
+                    <div><strong>Torqline HQ</strong><span>Detroit, Michigan</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: FAQ -->
+        <section class="container" style="padding-top:0">
+            <div class="split">
+                <div class="reveal">
+                    <span class="eyebrow">FAQ</span>
+                    <h2 style="margin-top:var(--s-4)">Before you <span class="serif">write in.</span></h2>
+                </div>
+                <div class="faq reveal">
+                    <details open>
+                        <summary>Can I request a vehicle review?</summary>
+                        <p>Absolutely. Send us the make and model and we'll add it to our testing queue. Popular requests are prioritized.</p>
+                    </details>
+                    <details>
+                        <summary>How do I submit an owner review?</summary>
+                        <p>Owner reviews require proof of purchase so we can mark them as verified. Reach out via the form and we'll send instructions.</p>
+                    </details>
+                    <details>
+                        <summary>I found an error in a spec. What now?</summary>
+                        <p>Thank you! Let us know the page and the correct figure with a source, and our editorial team will verify and update it.</p>
+                    </details>
+                    <details>
+                        <summary>Do you accept sponsored reviews?</summary>
+                        <p>No. We never accept payment for coverage or scores. Partnership enquiries are limited to clearly-marked affiliate pricing links.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Client side validation demo
+            const email = document.getElementById('c-email').value;
+            const name = document.getElementById('c-name').value;
+            const msg = document.getElementById('c-msg').value;
+            const msgBox = document.getElementById('contactMsg');
+
+            if(!name || !email || !msg || !email.includes('@')) {
+                msgBox.textContent = 'Please fill all required fields correctly.';
+                msgBox.className = 'form-msg error';
+            } else {
+                msgBox.textContent = 'Message sent successfully! (Demo)';
+                msgBox.className = 'form-msg success';
+                e.target.reset();
+            }
+        });
+    </script>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" aria-label="Torqline home"><span class="logo-mark"><i class="ph-bold ph-steering-wheel"></i></span>Torqline</a>
+                    <p>Expert vehicle comparisons, verified reviews, and independent buying guides.</p>
+                    <ul class="social-links" aria-label="Torqline on social media">
+                        <li><a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a></li>
+                        <li><a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a></li>
+                        <li><a href="#" aria-label="X (Twitter)"><i class="ph ph-x-logo"></i></a></li>
+                        <li><a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="vehicles.html">All Vehicles</a></li>
+                        <li><a href="compare.html">Compare Matrix</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About / Methodology</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <!-- Mailchimp embed code comment -->
+                    <p>Fresh reviews and price drops, once a month.</p>
+                    <form id="newsletterForm" novalidate>
+                        <div class="inline-form">
+                            <input type="email" id="nlEmail" class="form-control" placeholder="you@email.com" aria-label="Email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <span class="form-msg" role="status"></span>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-wordmark" aria-hidden="true">Torqline</div>
+            <div class="footer-bottom">
+                <p class="disclosure">Affiliate link disclosure: Some links may be affiliate links. We may earn a commission at no cost to you. Reviews are independent. Torqline is a demo brand. All specs/prices are placeholder data.</p>
+                <p>&copy; 2026 Torqline. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
